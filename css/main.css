@@ -1,0 +1,22 @@
+html,
+body {
+  background: #1b1b1b;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper-game {
+  left: 50%;
+  margin-top: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.score-content {
+  color: #ffffff;
+  text-align: center;
+}
