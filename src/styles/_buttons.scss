@@ -1,0 +1,39 @@
+@use 'variables' as *;
+
+.game-buttons,
+.touch-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 10px;
+
+  button {
+    background: $color-button;
+    border: none;
+    border-radius: 5px;
+    color: $color-text;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background 0.2s;
+
+    &:hover {
+      background: $color-button-hover;
+      cursor: pointer;
+    }
+  }
+}
+
+.touch-controls {
+  @media (min-width: $breakpoint-mobile + 1) {
+    display: none;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .game-buttons button,
+  .touch-controls button {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
