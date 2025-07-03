@@ -31,6 +31,7 @@ tetris/
 │   │   └── tetrominoes.ts
 │   ├── styles/
 │   │   ├── _buttons.scss
+│   │   ├── _footer.scss
 │   │   ├── _layout.scss
 │   │   ├── _variables.scss
 │   │   └── main.scss
