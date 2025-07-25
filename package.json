@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "clear:dist": "git rm -r --cached dist && git commit -m \"chore: remove dist from git tracking\"",
     "predeploy": "git push origin --delete gh-pages || echo 'No existe la rama gh-pages, se crea nueva'",
     "deploy": "git add dist -f && git commit -m 'build: dist actualizado correctamente' && git subtree push --prefix dist origin gh-pages",
     "ghpages": "yarn build && yarn predeploy && yarn deploy"
