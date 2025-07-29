@@ -4,16 +4,20 @@
 .touch-controls {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 10px;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 16px;
 
   button {
+    align-items: center;
     background: $color-button;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     color: $color-text;
+    display: flex;
     font-size: 16px;
+    height: 48px;
+    justify-content: center;
     padding: 8px 12px;
     transition: background 0.2s;
 
@@ -21,19 +25,34 @@
       background: $color-button-hover;
       cursor: pointer;
     }
+
+    svg {
+      height: 24px;
+      stroke: $color-text;
+      width: 24px;
+    }
   }
 }
 
-.touch-controls {
-  @media (min-width: $breakpoint-mobile + 1) {
+// Ocultar controles táctiles en desktop
+@media (min-width: $breakpoint-mobile + 1) {
+  .touch-controls {
     display: none;
   }
 }
 
+// Ajustes responsivos en mobile
 @media (max-width: $breakpoint-mobile) {
   .game-buttons button,
   .touch-controls button {
     font-size: 12px;
+    height: 40px;
     padding: 6px;
+    width: 40px;
+
+    svg {
+      height: 20px;
+      width: 20px;
+    }
   }
 }
