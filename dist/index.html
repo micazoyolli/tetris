@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#272944" />
+    <link rel="icon" type="image/x-icon" href="/tetris/favicon.ico" />
+
+    <!-- SEO general -->
+    <meta name="author" content="@micazoyolli" />
+    <meta name="robots" content="index, follow" />
+    <title>Tetris Moderno</title>
+    <meta name="title" content="Tetris Moderno" />
+    <meta name="description" content="Tetris moderno y responsivo desarrollado con JavaScript y SCSS. Juega, rota y desplaza piezas mientras aumentas tu nivel. 🎮" />
+    <meta name="keywords" content="tetris, juego clásico, tetris moderno, juegos web, javascript, scss, canvas" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Tetris Moderno" />
+    <meta property="og:description" content="Versión moderna del clásico Tetris con controles táctiles, puntaje y niveles." />
+    <meta property="og:url" content="https://micazoyolli.github.io/tetris/" />
+    <meta property="og:site_name" content="Tetris Moderno" />
+    <meta property="og:image" content="https://micazoyolli.github.io/tetris/meta.jpg" />
+    <meta property="og:image:secure_url" content="https://micazoyolli.github.io/tetris/meta.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tetris Moderno" />
+    <meta name="twitter:description" content="Versión moderna del clásico Tetris con controles táctiles, puntaje y niveles." />
+    <meta name="twitter:image" content="https://micazoyolli.github.io/tetris/meta.jpg" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://micazoyolli.github.io/tetris/" />
+
+    <!-- PWA -->
+    <link rel="manifest" href="/tetris/manifest.json" crossorigin />
+    <link rel="apple-touch-icon" href="https://micazoyolli.github.io/tetris/meta.jpg" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Tetris Moderno" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <script type="module" crossorigin src="/tetris/assets/index-CIYTy9Yj.js"></script>
+    <link rel="stylesheet" crossorigin href="/tetris/assets/index-_TTzCUml.css">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="game-container">
+        <canvas id="tetris" width="300" height="600"></canvas>
+        <div class="game-sidebar">
+          <p>Score: <span id="score">0</span></p>
+          <p>Lines: <span id="lines">0</span></p>
+          <p>Level: <span id="level">1</span></p>
+          <canvas id="next-piece" width="100" height="100"></canvas>
+          <div class="game-buttons">
+            <button id="play">Play</button>
+            <button id="pause">Pause</button>
+            <button id="restart">Restart</button>
+          </div>
+          <div class="touch-controls">
+            <button id="left" aria-label="Izquierda" class="btn-left">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+            </button>
+            <button id="rotate" aria-label="Girar" class="btn-rotate">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M2 12a10 10 0 1 1 4.6 8.4"/>
+                <polyline points="2 12 2 16 6 16"/>
+              </svg>
+            </button>
+            <button id="right" aria-label="Derecha" class="btn-right">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </button>
+            <button id="down" aria-label="Abajo" class="btn-down">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      Una creación de <a href="https://nadia.dev" target="_blank">&lt;micazoyolli /&gt; ✨</a>
+    </footer>
+  </body>
+</html>
