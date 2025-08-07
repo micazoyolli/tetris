@@ -10,7 +10,7 @@
     "clear:dist": "git rm -r --cached dist && git commit -m \"chore: remove dist from git tracking\"",
     "predeploy": "git push origin --delete gh-pages || echo 'No existe la rama gh-pages, se crea nueva'",
     "deploy": "git add dist -f && git commit -m 'build: dist actualizado correctamente' && git subtree push --prefix dist origin gh-pages",
-    "ghpages": "yarn build && yarn predeploy && yarn deploy"
+    "ghpages": "yarn build && find dist -name .DS_Store -delete && yarn predeploy && yarn deploy"
   },
   "devDependencies": {
     "sass": "^1.89.2",
