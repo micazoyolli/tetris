@@ -2,14 +2,28 @@ import { ROW, COL, VACANT } from './board';
 import { drawSquare } from './renderer';
 
 export class Piece {
+  activeTetromino: number[][];
+  color: string;
+  tetromino: number[][][];
+  tetrominoN: number;
+  x: number;
+  y: number;
+
   constructor(
-    public tetromino: number[][][],
-    public color: string,
-    public tetrominoN = 0,
-    public activeTetromino = tetromino[0],
-    public x = 3,
-    public y = -2
-  ) {}
+    tetromino: number[][][],
+    color: string,
+    tetrominoN = 0,
+    activeTetromino = tetromino[0],
+    x = 3,
+    y = -2
+  ) {
+    this.activeTetromino = activeTetromino;
+    this.color = color;
+    this.tetromino = tetromino;
+    this.tetrominoN = tetrominoN;
+    this.x = x;
+    this.y = y;
+  }
 
   fill(ctx: CanvasRenderingContext2D, color: string) {
     this.activeTetromino.forEach((row, r) => {

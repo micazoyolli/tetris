@@ -12,7 +12,7 @@ const scoreEl = document.getElementById('score')!;
 const linesEl = document.getElementById('lines')!;
 const levelEl = document.getElementById('level')!;
 
-const PIECES = [
+const PIECES: [number[][][], string][] = [
   [Z, '#FF4136'],
   [S, '#2ECC40'],
   [T, '#B10DC9'],

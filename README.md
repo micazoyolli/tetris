@@ -12,7 +12,9 @@ Juego interactivo de Tetris con canvas HTML5 y TypeScript, desarrollado con estr
 
 - HTML5 + SCSS (estructura modular)
 - TypeScript (ES6+)
-- Vite
+- Vite 8
+- Node 24
+- @micazoyolli/foundation para SEO/build y reduced motion
 
 ## 📦 Estructura del proyecto
 
@@ -54,6 +56,9 @@ tetris/
 ```bash
 yarn install
 yarn dev
+yarn lint
+yarn typecheck
+yarn build
 ```
 
 Abre `http://localhost:5173/tetris/` para jugar.

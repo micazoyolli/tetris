@@ -29,6 +29,3 @@ __MACOSX/
 *.njsproj
 *.sln
 *.sw?
-
-# Yarn
-yarn.lock

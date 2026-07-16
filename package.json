@@ -5,16 +5,24 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "yarn typecheck && yarn seo && vite build",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
     "preview": "vite preview",
-    "clear:dist": "git rm -r --cached dist && git commit -m \"chore: remove dist from git tracking\"",
-    "predeploy": "git push origin --delete gh-pages || echo 'No existe la rama gh-pages, se crea nueva'",
-    "deploy": "git add dist -f && git commit -m 'build: dist actualizado correctamente' && git subtree push --prefix dist origin gh-pages",
-    "ghpages": "yarn build && find dist -name .DS_Store -delete && yarn predeploy && yarn deploy"
+    "seo": "node scripts/generate-seo.mjs",
+    "deploy": "yarn build && find dist -name .DS_Store -delete && yarn deploy:prepare && yarn deploy:dist",
+    "deploy:prepare": "git push origin --delete gh-pages || echo 'No existe la rama gh-pages, se crea nueva'",
+    "deploy:dist": "git add dist -f && git commit -m 'build: dist actualizado correctamente' && git subtree push --prefix dist origin gh-pages"
   },
   "devDependencies": {
-    "sass": "^1.89.2",
-    "typescript": "~5.8.3",
-    "vite": "^7.0.0"
+    "@eslint/js": "10.0.1",
+    "@micazoyolli/foundation": "0.3.2",
+    "@types/node": "24.10.4",
+    "eslint": "10.7.0",
+    "globals": "17.7.0",
+    "sass": "1.101.0",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.64.0",
+    "vite": "8.1.5"
   }
 }
