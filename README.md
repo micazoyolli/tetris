@@ -2,7 +2,7 @@
 
 Juego interactivo de Tetris con canvas HTML5 y TypeScript, desarrollado con estructura modular, SCSS y Vite. Incluye lógica para niveles dinámicos y diseño responsive para desktop y mobile.
 
-<img alt="Tetris" src="https://github.com/micazoyolli/tetris/blob/master/public/assets/screenshot.png" width="500" />
+<img alt="Tetris" src="https://github.com/micazoyolli/tetris/blob/main/public/assets/screenshot.png" width="500" />
 
 ## 🌐 Demo
 
