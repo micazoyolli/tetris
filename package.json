@@ -5,14 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "yarn typecheck && yarn seo && vite build",
+    "build": "yarn build:404 && yarn typecheck && yarn seo && vite build",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "preview": "vite preview",
     "seo": "node scripts/generate-seo.mjs",
     "deploy": "yarn build && find dist -name .DS_Store -delete && yarn deploy:prepare && yarn deploy:dist",
     "deploy:prepare": "git push origin --delete gh-pages || echo 'No existe la rama gh-pages, se crea nueva'",
-    "deploy:dist": "git add dist -f && git commit -m 'build: dist actualizado correctamente' && git subtree push --prefix dist origin gh-pages"
+    "deploy:dist": "git add dist -f && git commit -m 'build: dist actualizado correctamente' && git subtree push --prefix dist origin gh-pages",
+    "build:404": "sass --pkg-importer=node src/styles/404.scss public/404.css --no-source-map"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",

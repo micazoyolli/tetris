@@ -12,15 +12,14 @@
     <meta name="twitter:card" content="summary" />
     <link rel="canonical" href="https://micazoyolli.github.io/tetris/404" />
     <link rel="icon" href="/tetris/favicon.ico" />
-    <style>
-      body{align-items:center;background:#272944;color:#fff;display:grid;font-family:system-ui,sans-serif;margin:0;min-height:100dvh;padding:1rem;place-items:center;text-align:center}
-      main{max-width:34rem}
-      .code{color:#7bdff2;font-size:clamp(4rem,18vw,8rem);font-weight:900;line-height:.9;margin:0}
-      h1{font-size:clamp(2rem,8vw,3.5rem);line-height:1;margin:.75rem 0}
-      p{line-height:1.6;margin:0 0 1.5rem}
-      a{background:#7bdff2;border-radius:.5rem;color:#272944;display:inline-flex;font-weight:800;min-height:44px;padding:.75rem 1rem;text-decoration:none}
-      a:focus-visible{outline:3px solid #fff;outline-offset:4px}
-    </style>
+    <link rel="stylesheet" href="/tetris/404.css" />
   </head>
-  <body><main><p class="code">404</p><h1>Bloque fuera de lugar</h1><p>Este enlace no existe dentro del juego.</p><a href="/tetris/">Volver a Tetris</a></main></body>
+  <body class="not-found">
+    <main class="not-found__panel" aria-labelledby="not-found-title">
+      <p class="not-found__code">404</p>
+      <h1 class="not-found__title" id="not-found-title">Bloque fuera de lugar</h1>
+      <p class="not-found__text">Este enlace no existe dentro del juego.</p>
+      <a class="not-found__link" href="/tetris/">Volver a Tetris</a>
+    </main>
+  </body>
 </html>
