@@ -10,9 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "seo": "node scripts/generate-seo.mjs",
-    "deploy": "yarn build && find dist -name .DS_Store -delete && yarn deploy:prepare && yarn deploy:dist",
-    "deploy:prepare": "git push origin --delete gh-pages || echo 'No existe la rama gh-pages, se crea nueva'",
-    "deploy:dist": "git add dist -f && git commit -m 'build: dist actualizado correctamente' && git subtree push --prefix dist origin gh-pages",
+    "deploy": "yarn build && find dist -name .DS_Store -delete && yarn deploy:dist",
+    "deploy:dist": "git add dist -f && git commit -m 'build: dist actualizado correctamente' && git subtree split --prefix dist -b gh-pages-deploy && git push -f origin gh-pages-deploy:gh-pages && git branch -D gh-pages-deploy",
     "build:404": "sass --pkg-importer=node src/styles/404.scss public/404.css --no-source-map"
   },
   "devDependencies": {
