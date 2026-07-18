@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /tetris/
+Sitemap: https://micazoyolli.github.io/tetris/sitemap.xml
