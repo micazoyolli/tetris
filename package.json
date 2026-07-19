@@ -11,12 +11,12 @@
     "preview": "vite preview",
     "seo": "node scripts/generate-seo.mjs",
     "deploy": "yarn build && find dist -name .DS_Store -delete && yarn deploy:dist",
-    "deploy:dist": "git add dist -f && git commit -m 'build: dist actualizado correctamente' && git subtree split --prefix dist -b gh-pages-deploy && git push -f origin gh-pages-deploy:gh-pages && git branch -D gh-pages-deploy",
+    "deploy:dist": "micazoyolli-gh-pages-deploy",
     "build:404": "sass --pkg-importer=node src/styles/404.scss public/404.css --no-source-map"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",
-    "@micazoyolli/foundation": "0.3.2",
+    "@micazoyolli/foundation": "0.4.0",
     "@types/node": "24.10.4",
     "eslint": "10.7.0",
     "globals": "17.7.0",

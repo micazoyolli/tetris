@@ -108,10 +108,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/retry/-/retry-0.4.3.tgz#c2b9d2e374ee62c586d3adbea87199b1d7a7a6ba"
   integrity sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==
 
-"@micazoyolli/foundation@0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@micazoyolli/foundation/-/foundation-0.3.2.tgz#32cf6df920d184f41e92dc430a6a612aee668336"
-  integrity sha512-OpcVyHFdBlZf06lHjKkQLRi74UG1cQrUMQFC5t3I1ypuPijSRZ/F5c5bTDP1rGjPvqeIuowoOGkAXfmVqCp0gg==
+"@micazoyolli/foundation@0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@micazoyolli/foundation/-/foundation-0.4.0.tgz#0cea4e826e9db83d7bc511b35e58899e094fe3a9"
+  integrity sha512-BBUIjpIR+Wb5MrX1bdxHNJs/dJKeuSikcO0hyhe4LXFNh6jmeBLYJEDG4oV30G5TyqHED7vSPJ2Yj4a/4j4shw==
 
 "@napi-rs/wasm-runtime@^1.1.6":
   version "1.1.6"
