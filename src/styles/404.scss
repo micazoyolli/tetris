@@ -35,11 +35,14 @@
   }
 
   &__link {
+    align-items: center;
     background: $color-button;
     border-radius: 0.5rem;
+    box-sizing: border-box;
     color: $color-text;
     display: inline-flex;
     font-weight: 800;
+    justify-content: center;
     min-height: 44px;
     padding: 0.75rem 1rem;
     text-decoration: none;

@@ -29,11 +29,14 @@
   margin: 0 0 1.5rem;
 }
 .not-found__link {
+  align-items: center;
   background: #884ea0;
   border-radius: 0.5rem;
+  box-sizing: border-box;
   color: #ffffff;
   display: inline-flex;
   font-weight: 800;
+  justify-content: center;
   min-height: 44px;
   padding: 0.75rem 1rem;
   text-decoration: none;
