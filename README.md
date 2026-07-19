@@ -63,6 +63,12 @@ yarn build
 
 Abre `http://localhost:5173/tetris/` para jugar.
 
+## Despliegue en GitHub Pages
+
+Este proyecto se publica en GitHub Pages desde la rama `gh-pages`. El comando `yarn deploy` compila la aplicación, limpia archivos `.DS_Store` del build y publica `dist/` usando el CLI de Micazoyolli Foundation sin crear commits de despliegue en `main`.
+
+La configuración `base` de Vite debe conservar la subruta del repositorio: `/tetris/`.
+
 ## 🧠 Funcionalidad
 
 - Lógica modular para piezas, tablero y render
