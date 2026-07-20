@@ -1,6 +1,6 @@
 # 🟦 Tetris Moderno
 
-Juego interactivo de Tetris con canvas HTML5 y TypeScript, desarrollado con estructura modular, SCSS y Vite. Incluye lógica para niveles dinámicos y diseño responsive para desktop y mobile.
+Juego interactivo de Tetris con Canvas, TypeScript, niveles dinámicos y controles para desktop y mobile.
 
 <img alt="Tetris" src="https://github.com/micazoyolli/tetris/blob/main/public/assets/screenshot.png" width="500" />
 
@@ -8,62 +8,46 @@ Juego interactivo de Tetris con canvas HTML5 y TypeScript, desarrollado con estr
 
 [Tetris Demo](https://micazoyolli.github.io/tetris/)
 
-## 🚀 Tecnologías usadas
+## 🛠️ Tecnologías
 
-- HTML5 + SCSS (estructura modular)
-- TypeScript (ES6+)
-- Vite 8
+- HTML5
+- TypeScript
+- SCSS
+- Vite
+- Canvas API
 - Node 24
-- @micazoyolli/foundation para SEO/build y reduced motion
+- Micazoyolli Foundation para SEO/build y reduced motion
 
-## 📦 Estructura del proyecto
-
-```
-tetris/
-├── public/
-│   ├── assets/
-│   ├── icons/
-│   ├── favicon.ico
-│   ├── manifest.json
-│   ├── meta.jpg
-│   ├── robots.txt
-│   └── sitemap.xml
-├── src/
-│   ├── game/
-│   │   ├── board.ts
-│   │   ├── main.ts
-│   │   ├── piece.ts
-│   │   ├── renderer.ts
-│   │   └── tetrominoes.ts
-│   ├── styles/
-│   │   ├── _buttons.scss
-│   │   ├── _footer.scss
-│   │   ├── _layout.scss
-│   │   ├── _variables.scss
-│   │   └── main.scss
-├── .editorconfig
-├── .gitignore
-├── .nvmrc
-├── index.html
-├── LICENSE
-├── package.json
-├── tsconfig.json
-└── vite.config.js
-```
-
-## ▶️ Uso
+## 📦 Instalación
 
 ```bash
 yarn install
+```
+
+## 🚀 Scripts
+
+```bash
 yarn dev
 yarn lint
 yarn typecheck
 yarn build
+yarn preview
+yarn deploy
 ```
 
-Abre `http://localhost:5173/tetris/` para jugar.
+Abre `http://localhost:5173/tetris/` para jugar en local.
 
-## Despliegue en GitHub Pages
+## 🗂️ Estructura del proyecto
+
+```txt
+public/
+scripts/
+src/
+├── game/
+└── styles/
+```
+
+## 🚢 Despliegue en GitHub Pages
 
 Este proyecto se publica en GitHub Pages desde la rama `gh-pages`. El comando `yarn deploy` compila la aplicación, limpia archivos `.DS_Store` del build y publica `dist/` usando el CLI de Micazoyolli Foundation sin crear commits de despliegue en `main`.
 
@@ -71,14 +55,12 @@ La configuración `base` de Vite debe conservar la subruta del repositorio: `/te
 
 ## 🧠 Funcionalidad
 
-- Lógica modular para piezas, tablero y render
-- Diseño responsive (desktop + mobile)
-- Niveles que incrementan la velocidad dinámicamente
-- Controles por teclado y touch (mobile)
+- Lógica modular para piezas, tablero y render.
+- Niveles que incrementan la velocidad dinámicamente.
+- Controles por teclado y touch.
+- Diseño responsive para desktop y mobile.
 
----
-
-## Construido con Micazoyolli Foundation
+## 🧩 Construido con Micazoyolli Foundation
 
 Este proyecto utiliza [Micazoyolli Foundation](https://github.com/micazoyolli/foundation) como infraestructura compartida. Las mejoras de tooling, estructura y despliegue deben realizarse en Foundation para beneficiar a todos los proyectos que la consumen.
 
