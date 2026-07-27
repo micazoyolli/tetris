@@ -1,12 +1,14 @@
 {
   "name": "Tetris Moderno",
   "short_name": "Tetris",
-  "start_url": ".",
-  "display": "standalone",
-  "background_color": "#272944",
-  "theme_color": "#272944",
   "lang": "es",
+  "id": "/tetris/",
+  "start_url": ".",
+  "scope": "/tetris/",
+  "display": "standalone",
   "orientation": "portrait",
+  "theme_color": "#272944",
+  "background_color": "#272944",
   "icons": [
     {
       "src": "icons/icon-192x192.png",
